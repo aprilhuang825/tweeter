@@ -5,3 +5,20 @@ nav {
   color: #FFFFFF;
   padding: 0 1.5em 0 1.5em;
 }
+
+nav span:nth-child(1) {
+  font-family: 'Bungee', cursive;
+}
+
+nav span:nth-child(2) {
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+nav i {
+  position: absolute;
+  right: 5em;
+  top: 2.5em;
+  color: red;
+}
