@@ -16,3 +16,6 @@
   background-color: #f4f1ec;
   font-weight: bold;
 }
+.over-limit-color {
+  color: red;
+}
