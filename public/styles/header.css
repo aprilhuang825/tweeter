@@ -1,6 +1,7 @@
 .profile {
-  height: 400px;
+  height: 500px;
   width: 100%;
+  padding-top: 150px; 
   background-color: orange;
   display: flex;
   flex-direction: column;

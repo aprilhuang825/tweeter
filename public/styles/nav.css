@@ -1,6 +1,8 @@
 nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   height: 120px;
-  width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 0 1.5em 0 1.5em;
