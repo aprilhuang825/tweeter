@@ -15,8 +15,8 @@
 }
 
 #tweets-container img {
-  width: 8%;
-  padding: 10px;
+  width: 6%;
+  padding: 15px;
 }
 
 #tweets-container header span:nth-of-type(2) {
@@ -44,7 +44,7 @@
 #tweets-container footer div {
   display: flex;
   justify-content: right;
-  color: #3a52a1;
+  color: #8fb2c9;
   padding-right: 20px;
 }
 
@@ -55,5 +55,5 @@
 
 
 #tweets-container footer div i:hover{
-  color: #F6AE2D;
+  color: #c21f30;
 }

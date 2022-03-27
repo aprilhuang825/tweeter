@@ -12,7 +12,7 @@
 }
 .new-tweet button {
   color: white;
-  background-color: #4056A1;
+  background-color: #8fb2c9;
   border: none;
   font-family: 'Bungee', cursive;
   float:left;
@@ -25,5 +25,5 @@
   font-weight: bold;
 }
 .over-limit-color {
-  color: red;
+  color: #c21f30;
 }
