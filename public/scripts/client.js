@@ -30,7 +30,7 @@ const data = [
   }
 ]
 
-const createTweetElement = function (tweetData) {
+const createTweetElement = function(tweetData) {
   const $tweet = $(`
   <article class="tweet">
   <header>
@@ -51,13 +51,16 @@ const createTweetElement = function (tweetData) {
   return $tweet;
 }
 
-const renderTweets = function (tweets) {
+const renderTweets = function(tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
     $('#tweets-container').append($tweet);
   }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
+  $(".new-tweet form").submit(function(event) {
+    event.preventDefault();
+  })
   renderTweets(data);
 }) 
