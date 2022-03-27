@@ -1,21 +1,20 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
-*/
-// Fake data taken from initial-tweets.json
+const XSSescape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const createTweetElement = function(tweetData) {
   const $tweet = $(`
   <article class="tweet">
   <header>
-      <img src=${tweetData.user.avatars}>
-      <span>${tweetData.user.name}</span>
-      <span>${tweetData.user.handle}</span>
+      <img src=${XSSescape(tweetData.user.avatars)}>
+      <span>${XSSescape(tweetData.user.name)}</span>
+      <span>${XSSescape(tweetData.user.handle)}</span>
     </header>
-    <p>${tweetData.content.text}</p>
+    <p>${XSSescape(tweetData.content.text)}</p>
     <footer>
-      <span>${timeago.format(tweetData.created_at)}</span>
+      <span>${XSSescape(timeago.format(tweetData.created_at))}</span>
       <div>
         <i class="fas fa-flag"></i>
         <i class="fas fa-retweet"></i>
