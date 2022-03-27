@@ -1,6 +1,14 @@
+.new-tweet {
+  padding-bottom: 40px;
+}
 .new-tweet output {
   font-family: 'Bungee', cursive;
   float: right;
+}
+.new-tweet label {
+  font-weight: bold;
+  padding-top: 30px;
+  float:left;
 }
 .new-tweet button {
   color: white;

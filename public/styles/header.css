@@ -1,11 +1,16 @@
 .profile {
   height: 500px;
   width: 100%;
-  padding-top: 150px; 
-  background-color: orange;
+  padding: 150px 0 40px 0; 
+  background-color: #8fb2c9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.transparenttextures.com/patterns/elastoplast.png");
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+}
+
+.profile span {
+  color: white;
+  font-size: 40px;
 }

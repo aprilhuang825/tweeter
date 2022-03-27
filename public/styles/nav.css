@@ -2,20 +2,23 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  height: 120px;
-  background-color: #4056A1;
+  height: 90px;
+  background-color: #5698c3;
   color: #FFFFFF;
   padding: 0 1.5em 0 1.5em;
 }
 
 nav span:nth-child(1) {
   font-family: 'Bungee', cursive;
+  font-size: 35px;
+  position: absolute;
+  top: 0.7em;
 }
 
 nav span:nth-child(2) {
   position: absolute;
   right: 1.5em;
-  top: 1.5em;
+  top: 1.2em;
 }
 
 nav i {

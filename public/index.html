@@ -5,7 +5,7 @@
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
-  <!-- font awesome -->
+  <!-- Font awesome icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
 
-  <!-- font -->
+  <!-- External Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -34,60 +34,45 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
- 
-  <!-- Timeage jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Timeage library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span style="font-family: 'Bungee', cursive">tweeter</span>
+    <span>tweeter</span>
     <span><b>Write</b> a new tweet</span>
     <i class="fa-solid fa-angles-down"></i>
   </nav>
 
+  <!-- Header section -->
   <header class="profile">
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-      <h2>Your Name</h2>
+      <span><b>April</b> Huang</span>
     </div>
   </header>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <!-- New tweet section -->
     <section class="new-tweet">
-      <!-- <h2>Compose Tweet</h2> -->
       <form action="/tweets" method="POST">
-        <!-- <label for="tweet-text">What are you humming about?</label> -->
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
         <button type="submit">Tweet</button>
         <output name="counter" class="counter" for="tweet-text">140</output>
       </form>
     </section>
-
-<!--     <article class="all-tweets">
-      <header>
-        <img src="/images/profile-hex.png">
-        <span>Newton</span>
-        <span>@SirIsaac</span>
-      </header>
-      <p>If I have seen further it is by standing on the shoulders of giants</p>
-      <footer>
-        <span>10 days ago</span>
-        <div>
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-        </div>
-      </footer>
-    </article> -->
-    <section id="tweets-container">
-
-    </section>
+    <!-- All tweets section -->
+    <section id="tweets-container"></section>
 
   </main>
 </body>
