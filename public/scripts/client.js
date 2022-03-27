@@ -61,6 +61,11 @@ const renderTweets = function(tweets) {
 $(document).ready(function() {
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: '/tweets',
+      data: $(this).serialize()
+    });
   })
   renderTweets(data);
 }) 
