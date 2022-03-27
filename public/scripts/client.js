@@ -46,7 +46,12 @@ $(document).ready(function() {
         type: 'POST',
         url: '/tweets',
         data: $(this).serialize()
-      });
+      })
+    .then(loadTweets());
+    // clear form
+    $(".new-tweet").find("form").trigger("reset");
+    //reset counter
+    $(".counter").text(140);
     }
   });
 
