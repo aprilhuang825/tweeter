@@ -65,7 +65,12 @@
     <!-- New tweet section -->
     <section class="new-tweet">
       <form action="/tweets" method="POST">
-        <label for="tweet-text">What are you humming about?</label>
+        <div> 
+          <i class="fas fa-exclamation-triangle"></i>
+          <span id='error-text'>Error</span>
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <span id="place-holder">What are you humming about?</span>
         <textarea name="text" id="tweet-text"></textarea>
         <button type="submit">Tweet</button>
         <output name="counter" class="counter" for="tweet-text">140</output>
