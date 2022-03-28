@@ -5,10 +5,11 @@
   font-family: 'Bungee', cursive;
   float: right;
 }
-.new-tweet label {
+#place-holder {
   font-weight: bold;
   padding-top: 30px;
-  float:left;
+  display: flex;
+  align-items: right;
 }
 .new-tweet button {
   color: white;
@@ -26,4 +27,12 @@
 }
 .over-limit-color {
   color: #c21f30;
+}
+
+.new-tweet div {
+  color: #c21f30;
+  font-weight: bold;
+  margin: 10px 80px 0 80px;
+  padding: 2px;
+  border: 4px solid #c21f30;
 }
