@@ -32,9 +32,24 @@ const renderTweets = function(tweets) {
   }
 }
 
+const loadTweets = function() {
+  $.ajax({
+    type: 'GET',
+    url: '/tweets'
+  })
+  .then(tweets => renderTweets(tweets));
+};
+
 $(document).ready(function() {
+
+  // load all tweets when page is loaded
+  loadTweets();
+
+  // hide error message
   const errorMsg = $(".new-tweet form").children('div');
   errorMsg.hide();
+
+  // submit new tweet
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
     const tweetLength = $(this).children('textarea').val().length;
@@ -43,11 +58,9 @@ $(document).ready(function() {
     if (!tweetLength) {
       $('#error-text').text('Tweet is empty');
       errorMsg.slideDown(300);
-      //alert('Tweet is empty');
     } else if (tweetLength > 140) {
       $('#error-text').text('Tweet is over 140 characters');
       errorMsg.slideDown(300);
-      //alert('Tweet is over 140 characters');
     } else {
       $.ajax({
         type: 'POST',
@@ -57,17 +70,11 @@ $(document).ready(function() {
     .then(loadTweets());
     // clear form
     $(".new-tweet").find("form").trigger("reset");
-    //reset counter
+    // reset counter
     $(".counter").text(140);
     }
   });
 
-  const loadTweets = function() {
-    $.ajax({
-      type: 'GET',
-      url: '/tweets'
-    })
-    .then(tweets => renderTweets(tweets));
-  };
-  loadTweets();
+
+
 });
