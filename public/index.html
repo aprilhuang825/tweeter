@@ -44,9 +44,11 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
-    <span><b>Write</b> a new tweet</span>
-    <i class="fa-solid fa-angles-down"></i>
+    <span class="tweet-header">tweeter</span>
+    <div class="write-tweet">
+      <span><b>Write</b> a new tweet</span>
+      <i class="fa-solid fa-angles-down"></i>
+    </div>
   </nav>
 
   <!-- Header section -->
@@ -65,7 +67,7 @@
     <!-- New tweet section -->
     <section class="new-tweet">
       <form action="/tweets" method="POST">
-        <div> 
+        <div>
           <i class="fas fa-exclamation-triangle"></i>
           <span id='error-text'>Error</span>
           <i class="fas fa-exclamation-triangle"></i>

@@ -40,10 +40,19 @@ const loadTweets = function() {
   .then(tweets => renderTweets(tweets));
 };
 
+// Hide/show write new tweet section
+const writeToggle = function() {
+  $('.write-tweet').click(function() {
+    $('.new-tweet').slideToggle('slow');
+    $('.new-tweet textarea').focus();
+  });
+};
+
 $(document).ready(function() {
 
   // load all tweets when page is loaded
   loadTweets();
+  writeToggle();
 
   // hide error message
   const errorMsg = $(".new-tweet form").children('div');
