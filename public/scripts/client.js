@@ -48,11 +48,34 @@ const writeToggle = function() {
   });
 };
 
+const scrollToggle = function(){
+    $(window).scroll(function() {
+      // on top of the page, hide arrow up icon, show write tweet icon
+      if ($(this).scrollTop() === 0) {
+        $('.scroll-up').hide(200);
+        $('.write-tweet').show(200);
+      // else show arrow up icon, hide write tweet icon
+      } else {
+        $('.scroll-up').show(200);
+        $('.write-tweet').hide(200);
+      }
+    })
+
+    $('.scroll-up').click(function() {
+      $(window).scrollTop(0);
+    })
+}
+
 $(document).ready(function() {
 
   // load all tweets when page is loaded
   loadTweets();
+
+  // hide/show write new tweet section
   writeToggle();
+
+  // hide/show arrow up and write new tweet icon
+  scrollToggle();
 
   // hide error message
   const errorMsg = $(".new-tweet form").children('div');

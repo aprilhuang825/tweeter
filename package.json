@@ -18,6 +18,6 @@
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.19.4"
   }
 }

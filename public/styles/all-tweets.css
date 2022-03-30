@@ -57,3 +57,18 @@
 #tweets-container footer div i:hover{
   color: #c21f30;
 }
+
+#tweets-container .scroll-up {
+  height: 80px;
+  width: 80px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: #c21f30;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+.scroll-up i{
+  color: white;
+  font-size: 30px;
+}
