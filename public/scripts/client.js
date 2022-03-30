@@ -1,5 +1,5 @@
 const XSSescape = function (str) {
-  let div = document.createElement("div");
+  let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
@@ -78,11 +78,11 @@ $(document).ready(function() {
   scrollToggle();
 
   // hide error message
-  const errorMsg = $(".new-tweet form").children('div');
+  const errorMsg = $('.new-tweet form').children('div');
   errorMsg.hide();
 
   // submit new tweet
-  $(".new-tweet form").submit(function(event) {
+  $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     const tweetLength = $(this).children('textarea').val().length;
     errorMsg.slideUp(300);
@@ -101,9 +101,9 @@ $(document).ready(function() {
       })
     .then(loadTweets());
     // clear form
-    $(".new-tweet").find("form").trigger("reset");
+    $('.new-tweet').find('form').trigger('reset');
     // reset counter
-    $(".counter").text(140);
+    $('.counter').text(140);
     }
   });
 
