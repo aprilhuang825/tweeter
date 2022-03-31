@@ -1,4 +1,4 @@
-#tweets-container article {
+  #tweets-container article {
   border: solid #545149;
   border-width: 4px;
   margin-top: 50px;
@@ -15,7 +15,7 @@
 }
 
 #tweets-container img {
-  width: 6%;
+  width: 70px;
   padding: 15px;
 }
 
@@ -34,16 +34,18 @@
   padding: 0 0 20px 20px;
   font-weight: bold;
 }
-#tweets-container footer span {
+
+#tweets-container footer {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+} 
+
+#tweets-container footer span {
   font-size: 70%;
   padding-left: 20px;
 }
 
 #tweets-container footer div {
-  display: flex;
-  justify-content: right;
   color: #8fb2c9;
   padding-right: 20px;
 }
@@ -51,8 +53,6 @@
 #tweets-container footer i {
   padding: 0 5px 10px 5px;
 }
-
-
 
 #tweets-container footer div i:hover{
   color: #c21f30;
@@ -68,7 +68,6 @@
   bottom: 2%;
   right: 2%;
 }
-
 .scroll-up i{
   color: white;
   font-size: 30px;
