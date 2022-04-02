@@ -16,3 +16,14 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser
+- chance
+- express
+- md5
+- timeago.js
+
+## Screenshots
+
+!["Screenshot of all tweet desktop"](https://github.com/aprilhuang825/tweeter/blob/master/docs/tweet-desktop.png)
+!["Screenshot of tweet box"](https://github.com/aprilhuang825/tweeter/blob/master/docs/tweet-box.png)
+!["Screenshot of all tweets"](https://github.com/aprilhuang825/tweeter/blob/master/docs/all-tweets.png)
